@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+    
+    <title>Andreza & Edwardson</title>
+</head>
+<body>
+    <div class="container">
+        <p class="faltamDias">
+            <span>••</span>
+            Faltam<span class="diasRestantes"></span>dias
+            <span>••</span>
+        </p>
+        <header>
+            <section>
+                <div>
+                    <p>Andreza</p><span>•</span>
+                </div>
+                <div class="centro">
+                    <img src="./img/casal1.jpg" alt="" id="fotoCasal">
+                </div>
+                <div>
+                    <span>•</span><p>Edwardson</p>
+                </div>
+            </section>
+            
+            <div class="arabesco">
+                <img src="./img/arabesco.png" alt="" class="left">
+                <img src="./img/arabesco.png" alt="" class="right">
+            </div>
+        </header>
+        <p class="data">18.12.2022</p>
+
+        <div class="blocoControles">
+            <div class="controle" id="pause">
+                <h3>Pausar música</h3>
+                <img src="./img/pause.svg" alt="">
+            </div>
+            <div class="controle" id="play">
+                <h3>Tocar música</h3>
+                <img src="./img/play.svg" alt="">
+            </div>
+            <audio src="audio.mp3"></audio>
+        </div>
+
+        <div class="head">
+            <h1>Sugestões de presentes</h1>
+            
+            <div class="divInputCodigo">
+                <label for="codigo">👇 Digite o seu código abaixo 👇</label>
+                <input type="text" name="codigo" id="codigo" placeholder="Ex: AE18Z9">
+                <button id="botaoCodigo">Buscar</button>
+            </div>
+        </div>
+        
+        <main>
+            <h3 id="convidado"></h3>
+            <section id="A0">
+                <aside>
+                    <a href="https://www.americanas.com.br/produto/1847309003?voltagem=220V&condition=NEW" target="_blank">
+                        <div>
+                            <img src="./img/liquidificador.jpg" alt="">
+                        </div>
+                        <h2>Liquidificador</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.americanas.com.br/produto/113197516?pfm_carac=mixer&pfm_index=5&pfm_page=search&pfm_pos=grid&pfm_type=search_page&offerId=5d53008ff216c95bdec7af55&buyboxToken=smartbuybox-acom-v2-727023aa-19bc-41f9-99a1-187fc0099ff4-2022-10-22%2021%3A46%3A49%200000&voltagem=110%20volts&condition=NEW" target="_blank">
+                        <div>
+                            <img src="./img/mixer.jpg" alt="">
+                        </div>
+                        <h2>Mixer</h2>
+                    </a>
+                </aside>
+            </section>
+    
+            <section id="A1">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/kit-com-2-lixeiras-inox-5-litros-just-home-collection/p/ch88j5a045/ud/udli/?&seller_id=sodimachomecenter&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=69737&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmPPEV6MCgWM8mbz6kUqZ64_xOC5ANDV15NtMm6OWr38VBSTRX1ptYgaAj_mEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/lixeiras.jpg" alt="">
+                        </div>
+                        <h2>Kit 2 lixeiras INOX</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.madeiramadeira.com.br/kit-para-banheiro-em-acrilico-6-pecas-4042390.html?origem=pla-4042390&utm_source=google&utm_medium=cpc&utm_content=kits-para-bancada-do-banheiro-3266&utm_term=&utm_id=17950846772&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmN5kUn7iqw8fn39VOBUghSIKscwW4dsaYmTHyHxP5e2vrOVI7FkFlcaAv" target="_blank">
+                        <div>
+                            <img src="./img/lavabo.jpg" alt="">
+                        </div>
+                        <h2>Kit banheiro lavabo</h2>
+                    </a>
+                </aside>
+            </section>
+            
+            <section id="A2">
+                <aside>
+                    <a href="https://www.larelazer.com.br/larelazer/cama/jogo-de-cama-150-fios-branco-queen-4-pecas_art342997" target="_blank">
+                        <div>
+                            <img src="./img/jogoDeCama.jpg" alt="">
+                        </div>
+                        <h2>Jogo de Cama</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.amazon.com.br/dp/B08YWVBVRJ/ref=cm_sw_r_mwn_dp_8TNK3A5C7450YD1QC1DV" target="_blank">
+                        <div>
+                            <img src="./img/jarraECopos.jpg" alt="">
+                        </div>
+                        <h2>Jarra c/ 6 copos</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="A3">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/ferro-de-passar-roupa-a-vapor-e-a-seco-arno-steamgliss-rosa/p/021958100/ep/elfv/?&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=68974&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmN8ojRfzQZfxoMevRSpkgk4ZZSIi15CtG4lymsdMjmzzynGUo6Vc2gaAm1uEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/ferroDePassar.jpg" alt="">
+                        </div>
+                        <h2>Ferro de passar roupa a vapor</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/conjunto-de-assadeiras-de-vidro-marinex-15760201323776-6-pecas/p/223378700/ud/assa/" target="_blank">
+                        <div>
+                            <img src="./img/assadeira.jpg" alt="">
+                        </div>
+                        <h2>Conjunto de assadeiras de vidro</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="A4">
+                <aside>
+                    <a href="https://www.amazon.com.br/Arno-SACB-Sanduicheira-Preta/dp/B0779HX3P7/ref=asc_df_B0779HX3P7/?tag=googleshopp00-20&linkCode=df0&hvadid=379816330550&hvpos=&hvnetw=g&hvrand=2471372739407141908&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-1010477375952&th=1" target="_blank">
+                        <div>
+                            <img src="./img/sanduicheira.jpg" alt="">
+                        </div>
+                        <h2>Sanduicheira</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/faqueiro-inox-malibu-85-pecas-tramontina/p/bck9e43c4a/ud/faqu/?&seller_id=efacil" target="_blank">
+                        <div>
+                            <img src="./img/faqueiro.jpg" alt="">
+                        </div>
+                        <h2>Faqueiro INOX - Tramontina</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="A5">
+                <aside>
+                    <a href="https://www.amazon.com.br/utens%C3%ADlios-Umite-Chef-resistente-antiaderente/dp/B082B9SSM5/ref=asc_df_B082B9SSM5/?tag=googleshopp00-20&linkCode=df0&hvadid=379805758976&hvpos=&hvnetw=g&hvrand=15074022415132566023&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-870914698483&th=1" target="_blank">
+                        <div>
+                            <img src="./img/utensiliosDeCozinha.jpg" alt="">
+                        </div>
+                        <h2>Kit Utensílios de Cozinha de Silicone</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.amazon.com.br/kit-travesseiro-nasa-fronhas-50x70/dp/B07C53CYPX/ref=asc_df_B07C53CYPX/?tag=googleshopp00-20&linkCode=df0&hvadid=379720772128&hvpos=&hvnetw=g&hvrand=14003042217278078906&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-809957999226&psc=1" target="_blank">
+                        <div>
+                            <img src="./img/travesseiro.jpg" alt="">
+                        </div>
+                        <h2>Kit travesseiro</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="A6">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/espremedor-de-frutas-arno-suco-express-cp31-eletrico-40w-750ml/p/021808100/ep/cent/?&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=68974&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmN-dKnR-bl_ZRdgvmNAwwqe0Xvo6ioxcizjnAvK6cpOiTjHXDZ1v6waAjJeEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/espremedor.jpg" alt="">
+                        </div>
+                        <h2>Espremedor de frutas</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/quadro-decorativo-para-sala-e-quarto-flores-azul-3-pecas-leron/p/bg7841aae7/de/qdec/" target="_blank">
+                        <div>
+                            <img src="./img/quadro.jpg" alt="">
+                        </div>
+                        <h2>Quadro decorativo</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="A7">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/armario-de-cozinha-com-1-porta-e-mesa-bancada-mp6004-multimoveis-preto/p/be0d17083j/mo/moac/?&seller_id=multimoveis2&utm_source=google&utm_medium=cpc&utm_campaign=-ft_pla-nc_coop_multimoveis_alwayson_smartpla-oc_venda&utm_content=-un_magalu-ce_b2c-cp_cooperados-bo_none-ts_informatica&utm_term=68147&partner_id=68147" target="_blank">
+                        <div>
+                            <img src="./img/bancada.jpg" alt="">
+                        </div>
+                        <h2>Bancada Gourmet</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/faqueiro-inox-malibu-85-pecas-tramontina/p/bck9e43c4a/ud/faqu/?&seller_id=efacil" target="_blank">
+                        <div>
+                            <img src="./img/faqueiro.jpg" alt="">
+                        </div>
+                        <h2>Faqueiro INOX - Tramontina</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="A8">
+                <aside>
+                    <a href="https://www.amazon.com.br/Facas-Pe%C3%A7as-Plenus-Tramontina-Cutelaria/dp/B07K32CH6K/ref=asc_df_B07K32CH6K/?tag=googleshopp00-20&linkCode=df0&hvadid=379804627379&hvpos=&hvnetw=g&hvrand=7806605684415350527&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-810983355288&psc=1" target="_blank">
+                        <div>
+                            <img src="./img/jogoDeFacas.jpg" alt="">
+                        </div>
+                        <h2>Jogos de facas - Tramontina</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.americanas.com.br/produto/4684889410?pfm_carac=frigideira-tramontina&pfm_index=1&pfm_page=search&pfm_pos=grid&pfm_type=search_page&offerId=623083d187c00289c296c529&cor=VERMELHO&condition=NEW" target="_blank">
+                        <div>
+                            <img src="./img/frigideira.jpg" alt="">
+                        </div>
+                        <h2>Kit de Frigideira - Tramontina</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="A9">
+                <aside>
+                    <a href="https://www.havan.com.br/aparelho-de-jantar-havan-casa-20-pecas-da-donna-arcos/p" target="_blank">
+                        <div>
+                            <img src="./img/aparelhoDeJantar.jpg" alt="">
+                        </div>
+                        <h2>Aparelho de jantar</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.amazon.com.br/Toalha-Banh%C3%A3o-Karsten-Lumina-Gramatura/dp/B076QM2ZQK/ref=asc_df_B076QM2ZQK/?tag=googleshopp00-20&linkCode=df0&hvadid=379699013401&hvpos=&hvnetw=g&hvrand=16940041710536415159&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-812986186021&psc=1" target="_blank">
+                        <div>
+                            <img src="./img/toalhas.jpg" alt="">
+                        </div>
+                        <h2>Jogo de toalhas</h2>
+                    </a>
+                </aside>
+            </section>
+
+
+            <section id="B0">
+                <aside>
+                    <a href="https://www.amazon.com.br/Loj%C3%A3o-Das-Bicamas-Colch%C3%B5es-Sapateira/dp/B07BMZ3V3X/ref=d_pd_sbs_sccl_3_2/131-5217241-4816764?pd_rd_w=kZxM5&content-id=amzn1.sym.396bcc56-5339-4938-8137-ee27609cea84&pf_rd_p=396bcc56-5339-4938-8137-ee27609cea84&pf_rd_r=R6JN63P6NAAB4B81A98T&pd_rd_wg=s1hgj&pd_rd_r=fd185c22-1cc1-4ae1-be4f-0c884d0ddca7&pd_rd_i=B07BMZ3V3X&psc=1p" target="_blank">
+                        <div>
+                            <img src="./img/sapateira.jpg" alt="">
+                        </div>
+                        <h2>sapateira</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.casasbahia.com.br/conjunto-de-panelas-10-pecas-tramontina-turim-com-revestimento-antiaderente-starflon-t1-tampas-de-vidro-e-cabos-de-baquelite-bronze-grafite-12545273/p/12545273?utm_medium=cpc&utm_source=GP_PLA&IdSku=12545273&idLojista=10037&tipoLojista=1P&&utm_campaign=gg_pmax_inter_utld_apostas&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmP-epgXFUFUs6kEw6xVfCXU9H5SBTil_Cb7n-sjoNbvYwJk1kjMOoIaAvrTEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/conjPanelas.jpg" alt="">
+                        </div>
+                        <h2>Jogo de panelas - Tramontina</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="B1">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/jogo-de-tacas-com-jarra-de-vidro-7-pecas-haus-bico-de-jaca-empire/p/142270200/ud/jarr/?&force=6&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=69736&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmP0uct-VrRYFfEYP7GjHFHiG8jTaAcAqZOYGm-Wd-pGcEgaDBYYdqcaAk9SEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/tacasEJarra.jpg" alt="">
+                        </div>
+                        <h2>Jogo de taças com jarra</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.lojavirtualtupperware.com.br/807681-kit-mestre-churrasqueiro/p" target="_blank">
+                        <div>
+                            <img src="./img/kitChurrasco.jpg" alt="">
+                        </div>
+                        <h2>Kit mestre churrasqueiro Tupperware</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="B2">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/jogo-de-tacas-para-vinho-cristal-450ml-6-pecas-haus-sense/p/142270100/ud/tavi/?&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=69736&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmOLZn0HT-ZNzW0h2uZDBTX4yYkZRDLiJ2Mw-CxyOKbGGBWZFpfpCrAaAg1_EALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/tacas.jpg" alt="">
+                        </div>
+                        <h2>Jogo de taças para vinho</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.amazon.com.br/X%C3%ADcara-Atenas-Porto-Brasil-285155/dp/B076VXDRKS/ref=asc_df_B076VXDRKS/?tag=googleshopp00-20&linkCode=df0&hvadid=379685432325&hvpos=&hvnetw=g&hvrand=6296694079086916804&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-872415200584&th=1" target="_blank">
+                        <div>
+                            <img src="./img/xicaras.jpg" alt="">
+                        </div>
+                        <h2>Conjunto de xícaras de chá</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="B3">
+                <aside>
+                    <a href="https://www.amazon.com.br/Frigideiras-Revestimento-Antiaderente-Tramontina-20399780/dp/B076MF92X9/ref=sr_1_6?crid=1EJ789DRZPGN2&keywords=frigideira+antiaderente&qid=1666479175&qu=eyJxc2MiOiI2LjM5IiwicXNhIjoiNi4yNCIsInFzcCI6IjUuNzQifQ%3D%3D&s=kitchen&sprefix=frigidei%2Ckitchen%2C214&sr=1-6" target="_blank">
+                        <div>
+                            <img src="./img/frigideira.jpg" alt="">
+                        </div>
+                        <h2>Jogo de frigideiras - Tramontina</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/aparelho-de-jantar-com-taca-16-pecas-duralex-redondo-branco-petala/p/223301200/ud/apja/?&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=69736&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmNoV1Nd1FfBW1XNTyL08R6abM6aOWEOpvQ2Om9CR6_tEj4Yg4NBdCsaAsc4EALw_wcB&gclsrc=aw.ds="_blank">
+                        <div>
+                            <img src="./img/aparelhoDeJantar.jpg" alt="">
+                        </div>
+                        <h2>Aparelho de jantar</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="B4">
+                <aside>
+                    <a href="https://www.amazon.com.br/Escorredor-Pratos-Porta-Talheres-Inox/dp/B0786TZMTH/ref=asc_df_B0786TZMTH/?tag=googleshopp00-20&linkCode=df0&hvadid=379816330550&hvpos=&hvnetw=g&hvrand=16481938464230379510&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-815190436292&psc=1" target="_blank">
+                        <div>
+                            <img src="./img/escorredor.jpg" alt="">
+                        </div>
+                        <h2>Escorredor de louça - inox</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/faqueiro-inox-malibu-85-pecas-tramontina/p/bck9e43c4a/ud/faqu/?&seller_id=efacil" target="_blank">
+                        <div>
+                            <img src="./img/faqueiro.jpg" alt="">
+                        </div>
+                        <h2>Faqueiro - Tramontina</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="B5">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/jogo-de-panelas-tramontina-antiaderente-de-aluminio-vermelho-7-pecas-turim/p/235024800/ud/cjpn/" target="_blank">
+                        <div>
+                            <img src="./img/JogoDePanelas.jpg" alt="">
+                        </div>
+                        <h2>Jogo de panelas - Tramontina</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.lojavirtualtupperware.com.br/870003-kit-caixa-ideal-14-litros--cada-/p" target="_blank">
+                        <div>
+                            <img src="./img/caixaIdeal.jpg" alt="">
+                        </div>
+                        <h2>Kit caixa ideal Tupperware</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="B6">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/cafeteira-eletrica-arno-perfectta-12-cafes-preta/p/023570100/ep/ceac/?&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=68974&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmMHkOuVpvygyXNBt_W4ocby4kwAjCFOqAGx-2Xd2ojDhlWkyLETjYYaAq7SEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/cafeteira.jpg" alt="">
+                        </div>
+                        <h2>Cafeteira elétrica</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.amazon.com.br/Ventilador-Timer-Mallory-Preto-Grafite/dp/B07BSYWZ6K/ref=asc_df_B07BSYWZ6K/?tag=googleshopp00-20&linkCode=df0&hvadid=379799985272&hvpos=&hvnetw=g&hvrand=13717546191929693015&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-812316004543&th=1" target="_blank">
+                        <div>
+                            <img src="./img/ventilador.jpg" alt="">
+                        </div>
+                        <h2>Ventilador de coluna</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="B7">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/pipoqueira-eletrica-britania-pop-time-pip-b-02-100g-de-pipoca-branca/p/216620300/ep/pipo/?&force=6&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=68974&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmNyQVmcnspH6vMUqFOdtkLjGUHy3iufN1jsoatdB9ZNCeUlvDZijZQaAuQUEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/pipoqueira.jpg" alt="">
+                        </div>
+                        <h2>Pipoqueira elétrica</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.gazin.com.br/produto/1250/tabua-de-passar-roupa-1-porta-3-nichos-com-suporte-florence-notavel?cor=branco&seller_id=15" target="_blank">
+                        <div>
+                            <img src="./img/tabuaDePassar.jpg" alt="">
+                        </div>
+                        <h2>Tábua de passar roupa com gabinete</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="B8">
+                <aside>
+                    <a href="https://www.amazon.com.br/dp/B07CMWPDTY/ref=sbl_dpx_br-dining-dinnerware-sets_B06W2KX9CG_0" target="_blank">
+                        <div>
+                            <img src="./img/aparelhoDeJantar.jpg" alt="">
+                        </div>
+                        <h2>Aparelho de jantar</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.madeiramadeira.com.br/armario-fruteira-310-benetil-moveis-387883.html?origem=pla-387883&utm_source=google&utm_medium=cpc&utm_content=balcoes-para-cozinha-5014&utm_term=&utm_id=17674019659&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmODZW63XMvO-mCdrosfXZVfbwWpLcmkUwi96LkVvaXtYdjuLPdQwkEaAmycEALw_wcB" target="_blank">
+                        <div>
+                            <img src="./img/fruteira.jpg" alt="">
+                        </div>
+                        <h2>Balcão fruteira</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="B9">
+                <aside>
+                    <a href="https://www.vidaecor.com.br/cama/king/jogo/jogo-cama-king-percal-200-fios-ipsum-cinza-dui-design.html?gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmO2swqF6-jrg-dsXn0Fmo-4l74YLDXsWJB-uqzLh-Mu9ziWxQtsZ3gaAlabEALw_wcB" target="_blank">
+                        <div>
+                            <img src="./img/jogoDeCama.jpg" alt="">
+                        </div>
+                        <h2>Jogo de cama</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/armario-de-cozinha-com-1-porta-e-mesa-bancada-mp6004-multimoveis-preto/p/be0d17083j/mo/moac/?&seller_id=multimoveis2&utm_source=google&utm_medium=cpc&utm_campaign=-ft_pla-nc_coop_multimoveis_alwayson_smartpla-oc_venda&utm_content=-un_magalu-ce_b2c-cp_cooperados-bo_none-ts_informatica&utm_term=68147&partner_id=68147" target="_blank">
+                        <div>
+                            <img src="./img/bancada.jpg" alt="">
+                        </div>
+                        <h2>Bancada goumert</h2>
+                    </a>
+                </aside>
+            </section>
+
+
+            <section id="C0">
+                <aside>
+                    <a href="https://www.ferreiracosta.com/Produto/318034/panela-de-pressao-vancouver-antiaderente-45l-grafite-fechamento-externo-tramontina?region_id=666666&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmPK5-0pPKOc97ySs91EUp-6ROknVukecibYaN_Bzxe7zIvGp5sD9xEaAszVEALw_wcB target="_blank">
+                        <div>
+                            <img src="./img/panelaDePressao.jpg" alt="">
+                        </div>
+                        <h2>Panela de pressão - Tramontina </h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.lojavirtualtupperware.com.br/870027-kit-lavanderia/p" target="_blank">
+                        <div>
+                            <img src="./img/lavanderia.jpg" alt="">
+                        </div>
+                        <h2>Kit lavanderia - Tupperware </h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="C1">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/conjunto-aparelho-fondue-lausanne-ceramica-chocolate-queijo-hauskraft/p/eehjf57g2g/ud/apfd/" target="_blank">
+                        <div>
+                            <img src="./img/foundue.jpg" alt="">
+                        </div>
+                        <h2>Aparelho de foundue</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.amazon.com.br/dp/B09PRTK8VV/ref=sspa_dk_detail_3?psc=1p13NParams&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy" target="_blank">
+                        <div>
+                            <img src="./img/espelho.jpg" alt="">
+                        </div>
+                        <h2>Espelho decorativo</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="C2">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/micro-ondas-electrolux-31-litros-mi41s/p/fc80j77e7c/ed/mond/?&seller_id=carrefouroficial&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=69089&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmNfE5lBS5FkaWeYZqvEWtUnt7qSsdc5jvNj_DQQogfUBUB9JQpihioaAsKZEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/microondas.jpg" alt="">
+                        </div>
+                        <h2>Microondas</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="C3">
+                <aside>
+                    <a href="https://loja.electrolux.com.br/bebedouro-de-agua-eletronico-prata-be11x/p?idsku=2002709&utm_source=google&utm_campaign=googlepla&utm_medium=shopping&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmNYIvrkh5QaxpkRG6F91VrGpqfDFT7K9ZJh6JPM5SfJdvH5UywAD2gaAgtGEALw_wcB " target="_blank">
+                        <div>
+                            <img src="./img/bebedouro.jpg" alt="">
+                        </div>
+                        <h2>Bebedouro de água</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="C4">
+                <aside>
+                    <a href="https://www.amazon.com.br/Fritadeira-El%C3%A9trica-Electrolux-Efficient-EAF10/dp/B09DLCXG2D/ref=asc_df_B09DLCXG2D/?tag=googleshopp00-20&linkCode=df0&hvadid=455483639906&hvpos=&hvnetw=g&hvrand=8795363253319310074&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-1435074339083&psc=1" target="_blank">
+                        <div>
+                            <img src="./img/airFryer.jpg" alt="">
+                        </div>
+                        <h2>Air Fryer</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="C5">
+                <aside>
+                    <a href="https://www.amazon.com.br/Arno-Ventilador-Coluna-Desmont%C3%A1vel-Turbo/dp/B0B5RNF9KT/ref=asc_df_B0B5RNF9KT/?tag=googleshopp00-20&linkCode=df0&hvadid=379720775491&hvpos=&hvnetw=g&hvrand=14363730373986852846&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-1750454034236&th=1" target="_blank">
+                        <div>
+                            <img src="./img/ventilador.jpg" alt="">
+                        </div>
+                        <h2>Ventilador de Coluna</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/panela-de-pressao-fechamento-externo-45l-antiaderente-cereja-panelux/p/gahc70fabh/ud/udpp/?&seller_id=alfixshop&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=69737&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmO6Bs4YhH6Hk2F5f5SueMuve_UceAihFYydClS16lNu9NQ5zOLcmBsaAjdWEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/panelaDePressao.jpg" alt="">
+                        </div>
+                        <h2>Panela de pressão - tramontina</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="C6">
+                <aside>
+                    <a href="https://www.amazon.com.br/Girat%C3%B3rio-sint%C3%A9ticos-madeira-Flash-Limp/dp/B09WC6NHLW/ref=asc_df_B09WC6NHLW/?tag=googleshopp00-20&linkCode=df0&hvadid=379805722748&hvpos=&hvnetw=g&hvrand=5097385031042800005&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-1682922365676&psc=1" target="_blank">
+                        <div>
+                            <img src="./img/mop.jpg" alt="">
+                        </div>
+                        <h2>MOP giratório</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.americanas.com.br/produto/1751891414?pfm_carac=voc%C3%AA%20tamb%C3%A9m%20pode%20gostar%20disso&pfm_index=4&pfm_page=product&pfm_pos=item_page.rr1&pfm_type=vit_recommendation&DCSext.recom=RR_item_page.rr1-mars_ClickCP%3AP%3A94%3A%3Aads%3Dtrue%3AorderAdsTest%3Dmotor_high_ads&nm_origem=rec_item_page.rr1-mars_ClickCP%3AP%3A94%3A%3Aads%3Dtrue%3AorderAdsTest%3Dmotor_high_ads&nm_ranking_rec=4&offerId=5f2db1f379bf8430cb03e05b#info-section" target="_blank">
+                        <div>
+                            <img src="./img/sobremesa.jpg" alt="">
+                        </div>
+                        <h2>Conjunto para sobremesas</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="C7">
+                <aside>
+                    <a href="https://www.amazon.com.br/GARRAFA-T%C3%89RMICA-EXATA-POLIPROPILENO-AMPOLA/dp/B08YFFT2PG/ref=asc_df_B08YFFT2PG/?tag=googleshopp00-20&linkCode=df0&hvadid=455483639906&hvpos=&hvnetw=g&hvrand=1434725200279665622&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-1256906304185&psc=1" target="_blank">
+                        <div>
+                            <img src="./img/garrafaTermica.jpg" alt="">
+                        </div>
+                        <h2>Garrafa térmica para café</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/jogo-de-tacas-para-agua-em-vidro-6-pecas-490ml-nadir-barone/p/142245200/ud/cecn/?&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=67192&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmNUa95Rbb8wEQNeKMdTS32Mxulbh8-3JjpGho_pctNc-0C1t6SmkbYaAs3jEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/tacas.jpg" alt="">
+                        </div>
+                        <h2>Jogo de taça para vinhos</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="C8">
+                <aside>
+                    <a href="https://www.larelazer.com.br/larelazer/cama/jogo-de-cama-grafite-king-4-pecas_art343934" target="_blank">
+                        <div>
+                            <img src="./img/jogoDeCama.jpg" alt="">
+                        </div>
+                        <h2>Jogo de cama</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/fruteira-e-saladeira-de-vidro-com-pe-ruvolo-gourmet-modena-redonda-32cm/p/ek04bb21hf/ud/udas/?&seller_id=lojaslebiscuit&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=68055&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmMi4ho5bVLkRdpd-s-uNy8D610oTsnCwIyR_NcCIaXW9nwNwSlmdYcaAvoJEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/fruteira.jpg" alt="">
+                        </div>
+                        <h2>Fruteira goumert</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="C9">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/jogo-de-sobremesa-coza-cake-13-pecas/p/143386200/ud/coso/" target="_blank">
+                        <div>
+                            <img src="./img/sobremesa.jpg" alt="">
+                        </div>
+                        <h2>Conjunto para sobremesas</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.amazon.com.br/Churrasco-Pe%C3%A7as-Tramontina-22399028-Natural/dp/B008NKMWN2/ref=asc_df_B008NKMWN2/?tag=googleshopp00-20&linkCode=df0&hvadid=379815101924&hvpos=&hvnetw=g&hvrand=8957128464347049269&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047757&hvtargid=pla-457118995184&psc=1" target="_blank">
+                        <div>
+                            <img src="./img/kitChurrasco15.jpg" alt="">
+                        </div>
+                        <h2>Kit para churrasco</h2>
+                    </a>
+                </aside>
+            </section>
+
+            
+            <section id="D0">
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/batedeira-arno-3-velocidades-2-tigelas-facilita-sx16/p/7723117/ep/bate/?&seller_id=leonfer&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=69091&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmPMz_joxeENE7QFs3xabkl6qJ4AFHKtKgiNhx1GWssYjyqiHVBZzV4aAgD5EALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/batedeira.jpg" alt="">
+                        </div>
+                        <h2>Batedeira</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/aspirador-de-po-portatil-e-vertical-electrolux-1000w-power-speed-stk12-preto/p/021499200/ep/apdv/?&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=68974&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmNDweQd-7gUl-23ImyeR_Xx5NtSWVa4asYklGgFjyQKdwQQ9rp6BxYaAqHKEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/aspirador.jpg" alt="">
+                        </div>
+                        <h2>Aspirador de pó</h2>
+                    </a>
+                </aside>
+            </section>
+
+            <section id="D1">
+                <aside>
+                    <a href="https://www.casasbahia.com.br/conjunto-de-assadeiras-refratarias-10-pecas-marinex-em-vidro-sodacal-14564626/p/14564626?utm_medium=cpc&utm_source=GP_PLA&IdSku=14564626&idLojista=10037&tipoLojista=1P&&utm_campaign=gg_pmax_inter_utld_apostas&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmOSNOVDsPV7RKe8Cm5fE1I8at4SRGovyHlQktc74ywiH1fDLGpkFFkaAjgzEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/conjuntoDeTravessa.jpg" alt="">
+                        </div>
+                        <h2>Conjunto de travessa de vidro</h2>
+                    </a>
+                </aside>
+                <aside>
+                    <a href="https://www.magazineluiza.com.br/kit-petisqueira-redonda-madeira-4-facas-queijo-4-pecas-vinho-com-molheira-ramekin-e-garfinhos-p-petisco-houme/p/ga2j08kk53/ud/peti/?&seller_id=wheelup&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=69737&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmMx3-7WxLyej_rO-_nGY2oMjPuTcX5_XouwP6-JN2DfPBDtHHjfAGMaAmWuEALw_wcB&gclsrc=aw.ds" target="_blank">
+                        <div>
+                            <img src="./img/tabua.jpg" alt="">
+                        </div>
+                        <h2>Tábua de frios</h2>
+                    </a>
+                </aside>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>

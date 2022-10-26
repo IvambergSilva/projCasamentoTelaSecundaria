@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --fonteCursiva: 'Ephesis', cursive;
+    --Montserrat: 'Montserrat', sans-serif;
+    --great: 'Great Vibes';
+    --cor: #B76E79;
+    --cor2: #F4EFD7;
+}
+
+div.blocoControles {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 20px;
+    margin: auto;
+}
+div.controle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    font: 400 15px var(--Montserrat);
+    cursor: pointer;
+    border: 1px solid var(--cor);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+div.controle:hover{
+    background: #B76E7980;
+    transition: 0.2s;
+}
+
+div.controle img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor);
+    margin: 0 auto;
+    gap: 0;
+}
+
+header section div:not(.centro, .fotoCasal){
+    border-top: 9px double var(--cor);
+    border-bottom: 9px double var(--cor);
+    width: 150px;
+    text-align: center;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header section div p {
+    font: 400 20px var(--great);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0;
+    width: 180px;
+}
+
+header section div.centro{
+    text-align: center;
+    border: 3px solid  var(--cor);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section div.fotoCasal {
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    background-image: url(img/casal1.jpg);
+    background-size: cover;
+}
+
+
+header section img {
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+}
+
+
+header span:not(.diasRestantes) {
+    font: 400 20px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 60px;
+}
+
+p.faltamDias, p.data {
+    font: 700 20px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: var(--cor);
+    margin: 10px 0;
+}
+
+p.data {
+    font-size: 30px;
+}
+
+.arabesco {
+    display: flex;
+    justify-content: center;
+}
+
+div img.left {
+    transform: rotateY(-180deg);
+}
+
+div.arabesco img {
+    width: 100px;
+}
+
+
+.diasRestantes {
+    margin: 0 10px;
+    color: #a35d67;
+}
+
+
+
+
+div.head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px 0;
+    display: none;
+}
+
+.piscarAvisoBorda {
+    animation: piscarAvisoBorda 0.2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes piscarAvisoBorda {
+    0% {
+        border: 4px solid #FF0;
+    }
+    100% {
+        border: 4px solid #000;
+    }
+}
+
+#convidado {
+    font: 400 25px var(--Montserrat);
+    margin: 40px 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+section aside {
+    height: 320px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--cor);
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px #00000080;
+}
+
+.flex {
+    display: none;
+}
+
+.divInputCodigo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+label {
+    font: 400 15px var(--Montserrat);
+}
+
+#codigo {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0 20px;
+    font: 400 19px var(--Montserrat);
+    box-shadow: 0px 1px 14px #00000080;
+    text-transform: uppercase;
+}
+
+#botaoCodigo {
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background: gold;
+    font-size: 20px;
+    font: 400 18px var(--Montserrat);
+    box-shadow: 0px 1px 14px #00000080;
+}
+
+#botaoCodigo:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+
+div.container {
+    height: 100vh;
+    margin: auto;
+    padding-top: 20px;
+    background-color: #b76e7922;    
+}
+
+body {
+    background-color: #B76E793E;
+}
+
+main {
+    padding-bottom: 90px;
+}
+
+section aside {
+    animation: esmaecer 1s;
+}
+
+section aside:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+@keyframes esmaecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section aside a {
+    width: 230px;
+    height: 300px;
+    background: #FFF;
+    border-radius: 20px;
+    font: 200 13px var(--fonteCursiva);
+    text-decoration: none;
+    color: #000;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section aside:nth-child(1) {
+    animation: escala 0.5s;
+}
+
+section aside:nth-child(2) {
+    animation: escala 0.5s;
+    animation-delay: 0.1s;
+}
+
+
+@keyframes escala {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+section aside a div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+section aside a h2 {
+    height: fit-content;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    font-family: var(--Montserrat);
+}
+
+section aside div img {
+    border-radius: 20px;
+    width: 180px;
+}
+
+h1 {
+    text-align: center;
+    font: 400 30px var(--Montserrat);
+    margin: 40px 0;
+}
+
+@media screen and (max-width: 520px){
+    header section img {
+        border: 3px solid  var(--cor);
+    }
+    header section div:not(.centro){
+        width: 120px;
+    }
+    header span:not(.diasRestantes) {
+        display: none;
+    }
+    
+    h1 {
+        font: 400 20px var(--Montserrat);
+    }
+    
+    div.blocoControles {
+        flex-direction: column;
+        gap: 0px;
+        margin: 10px auto;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    header section img {
+        width: 100px;
+    }
+    header section div:not(.centro){
+        width: 100px;
+        border-top: 6px double var(--cor);
+        border-bottom: 6px double var(--cor);
+    }
+    header section div p{
+        font-size: 15px;
+    } 
+}
+
+
+@media screen and (max-width: 600px){
+    main section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
