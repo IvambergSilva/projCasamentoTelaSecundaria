@@ -242,9 +242,7 @@ function buscarPessoa () {
             document.getElementById(`${elemento.id}`).style.display = 'flex';
             convidado.innerHTML = `❤️ Oii,  ${elemento.nome},  aqui estão algumas sugestões... ❤️ <br><br> Clique no produto para ser direcionado para uma sugestão de loja!`
             condicao = 1
-            console.log(condicao);
         } else if (codigo == '' || condicao == 0) {
-            console.log(condicao);
             convidado.innerHTML = 'Oii, digite o código que você recebeu!';
             inputCodigo.classList.add('piscarAvisoBorda')
             inputCodigo.style.border = "4px solid #000";
