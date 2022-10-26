@@ -167,6 +167,8 @@ let codigoPessoas = [
     }
 ];
 
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 let grandeDia = new Date("dec 18, 2022 10:00:00").getTime()
 let agora = new Date().getTime();
 let t = (grandeDia - agora)/1000
