@@ -237,8 +237,7 @@ label {
 div.container {
     height: 100vh;
     margin: auto;
-    padding-top: 20px;
-    background-color: #b76e7922;    
+    padding-top: 20px;  
 }
 
 body {
@@ -353,9 +352,6 @@ h1 {
 
 
 @media screen and (max-width: 450px){
-    header section img {
-        width: 100px;
-    }
     header section div:not(.centro){
         width: 100px;
         border-top: 6px double var(--cor);
