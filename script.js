@@ -167,7 +167,7 @@ let codigoPessoas = [
     }
 ];
 
-//document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 let grandeDia = new Date("dec 18, 2022 10:00:00").getTime()
 let agora = new Date().getTime();
@@ -176,6 +176,7 @@ let dia = Math.floor(t / (86400))
 document.querySelector('.diasRestantes').innerHTML = dia
 
 const audio = document.querySelector('audio');
+audio.currentTime = 25;
 
 let movimento = 0
 
